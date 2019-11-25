@@ -1,0 +1,7 @@
+- git: {local-name: evo_dcdc_shield_interface, uri: 'https://github.com/evocortex/evo_dcdc_shield_interface.git', version: master}
+- git: {local-name: evo_logger, uri: 'https://github.com/evocortex/evo_logger.git', version: master}
+- git: {local-name: evo_motor_shield_interface, uri: 'https://github.com/evocortex/evo_motor_shield_interface.git', version: master}
+- git: {local-name: evo_rd_platform_example, uri: 'https://github.com/evocortex/evo_rd_platform_example.git', version: master}
+- git: {local-name: evo_robot_base_interface, uri: 'https://github.com/evocortex/evo_robot_base_interface.git', version: master}
+- git: {local-name: evo_scan_inverter, uri: 'https://github.com/evocortex/evo_scan_inverter.git', version: master}
+- git: {local-name: evo_tof_board_interface, uri: 'https://github.com/evocortex/evo_tof_board_interface.git', version: master}
