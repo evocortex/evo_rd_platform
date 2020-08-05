@@ -13,7 +13,8 @@ cd /home/nvidia/catkin-ws/src
 git clone https://github.com/evocortex/evo_rd_platform.git
 
 # Install evo-mbed-tools for your system and architecture
-sudo dpkg -i bin/evo-mbed-tools-***.deb # Use your required install file
+# See bin/README.md for further details
+sudo dpkg -i bin/evo-mbed-tools-***.deb
 wstool update
 
 # Build your workspace
@@ -33,7 +34,8 @@ git clone https://github.com/evocortex/evo_rd_platform.git
 git checkout v1.0.0
 
 # Install evo-mbed-tools for your system and architecture
-sudo dpkg -i bin/evo-mbed-tools-***.deb # Use your required install file
+# See bin/README.md for further details
+sudo dpkg -i bin/evo-mbed-tools-***.deb
 wstool update
 
 # Build your workspace
