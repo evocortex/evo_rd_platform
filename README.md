@@ -40,17 +40,35 @@ wstool update
 cd  /home/nvidia/catkin-ws
 catkin build
 ```
+## Update master branch
 
-## Updates
+If you want to update your sub-repos from the master branch you can use:
+```
+cd /home/nvidia/catkin-ws/src/evo_rd_platform
+wstool update
+```
+
+Please take care that this will only work if you don't have any changes in the repositories.
+If you changed a file the repository containing it will not be updated!
+
+
+## Upgrade to another version
 
 If you want to update an old version with a new version take care to uninstall the evo-mbed-tools and replace it with the new version:
 
 ```
-# Update from v1.0.0
+# Upgrade from v1.0.0
 sudo apt remove evo_mbed_tools
 
-Update from newer versions
+# Update from newer versions (naming changed)
 sudo apt remove evo-mbed-tools
+
+# Checkout required version or master
+git checkout master
+
+# Update branches
+# Take care to have clean sub-repos otherwise the update will fail
+wstool update
 
 # Install
 sudo dpkg -i bin/evo-mbed-tools-***.deb
