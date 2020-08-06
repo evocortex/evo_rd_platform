@@ -43,7 +43,7 @@ cd /home/nvidia/catkin-ws/src
 git clone https://github.com/evocortex/evo_rd_platform.git
 
 # Checkout required version
-git checkout v1.0.0
+git checkout v1.1.0 # This is only an example and must not work
 
 # Update evo-mbed-tools via script or manual
 # Update via script
@@ -99,7 +99,7 @@ cd /home/nvidia/catkin-ws/src/evo_rd_platform
 git fetch --all
 
 # Checkout your desired version
-git checkout v2.3.0 # This is only an example and will not work
+git checkout v2.3.0 # This is only an example and must not work
 
 # Update sub-repositories (take care that they are "clean")
 wstool update
@@ -134,5 +134,6 @@ roslaunch evo_rd_platform_examples evo_***.launch
 ```
 
 # Notes
+- **v1.0.0**: This was the first released version. The install process differs from the one described above. Please follow the instructions in the README if v1.0.0 is checked out.
 
 - **v1.0.0 to v1.1.0**: Please be aware that the naming of the **Evocortex Embedded Library** has changed from **evo_mbed_tools** to **evo-mbed-tools**. You have to uninstall evo_mbed_tools from your system and reinstall evo-mbed-tools to be able to build your application! Alternativly use the update-evo-tools script.
