@@ -1,9 +1,9 @@
-//###############################################################
-//# Copyright (C) 2020, Evocortex GmbH, All rights reserved.    #
-//# Further regulations can be found in LICENSE file.           #
-//###############################################################
-
 #!/bin/bash
+
+###############################################################
+# Copyright (C) 2020, Evocortex GmbH, All rights reserved.    #
+# Further regulations can be found in LICENSE file.           #
+###############################################################
 
 # Get system information
 LINUX_DIST_=$(lsb_release -is)
