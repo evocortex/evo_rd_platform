@@ -15,11 +15,14 @@ git clone https://github.com/evocortex/evo_rd_platform.git
 ```
 
 **Install evo-mbed-tools**
+
+There are two ways to install the evo-mbed-tools:
+
 ```
-# Installation by hand (see bin/README.md for details)
+# 1. Method: Installation by hand (see bin/README.md for details)
 sudo dpkg -i bin/evo-mbed-tools-***.deb
 
-# Installation via script
+# 2. Method: Installation via script
 sudo ./update-evo-tools.sh
 ```
 
@@ -45,8 +48,13 @@ git clone https://github.com/evocortex/evo_rd_platform.git
 # Checkout required version
 git checkout v1.1.0 # This is only an example and must not work
 
-# Update evo-mbed-tools via script or manual
-# Update via script
+# Update evo-mbed-tools with one of the two methods described below:
+
+# 1. Method: Update by hand (see bin/README.md for details)
+sudo apt remove evo-mbed-tools evo_mbed_tools # Remove old version (if there are erros you can ignore them)
+sudo dpkg -i bin/evo-mbed-tools-***.deb # Install new version
+
+# 2. Method: Installation via script
 sudo ./update-evo-tools.sh
 
 # Update workspace
@@ -70,13 +78,14 @@ git pull origin master
 # Update sub-repositories (take care that they are "clean")
 wstool update
 
-# Update evo-mbed-tools via script or manual
-# Update via script
-sudo ./update-evo-tools.sh
+# Update evo-mbed-tools with one of the two methods described below:
 
-# Manual (see bin/README.md)
-sudo apt-get remove -y evo-mbed-tools evo_mbed_tools
-sudo dpkg -i bin/evo-mbed-tools-*-ubuntu-bionic-amd64.deb
+# 1. Method: Update by hand (see bin/README.md for details)
+sudo apt remove evo-mbed-tools evo_mbed_tools # Remove old version (if there are erros you can ignore them)
+sudo dpkg -i bin/evo-mbed-tools-***.deb # Install new version
+
+# 2. Method: Installation via script
+sudo ./update-evo-tools.sh
 
 # Build workspace
 cd  /home/nvidia/catkin-ws
@@ -104,13 +113,14 @@ git checkout v2.3.0 # This is only an example and must not work
 # Update sub-repositories (take care that they are "clean")
 wstool update
 
-# Update evo-mbed-tools via script or manual
-# Update via script
-sudo ./update-evo-tools.sh
+# Update evo-mbed-tools with one of the two methods described below:
 
-# Manual (see bin/README.md)
-sudo apt-get remove -y evo-mbed-tools evo_mbed_tools
-sudo dpkg -i bin/evo-mbed-tools-*-ubuntu-bionic-amd64.deb
+# 1. Method: Update by hand (see bin/README.md for details)
+sudo apt remove evo-mbed-tools evo_mbed_tools # Remove old version (if there are erros you can ignore them)
+sudo dpkg -i bin/evo-mbed-tools-***.deb # Install new version
+
+# 2. Method: Installation via script
+sudo ./update-evo-tools.sh
 
 # Build workspace
 cd  /home/nvidia/catkin-ws
