@@ -19,6 +19,9 @@ git clone https://github.com/evocortex/evo_rd_platform.git
 There are two ways to install the evo-mbed-tools:
 
 ```
+# Enter evo_rd_platform directory
+cd /home/nvidia/catkin-ws/src/evo_rd_platform
+
 # 1. Method: Installation by hand (see bin/README.md for details)
 sudo dpkg -i bin/evo-mbed-tools-***.deb
 
@@ -28,6 +31,7 @@ sudo ./update-evo-tools.sh
 
 **Update workspace**
 ```
+cd /home/nvidia/catkin-ws/src/evo_rd_platform
 wstool update
 ```
 
@@ -44,6 +48,9 @@ If you want to install a specific version e.g. **v1.1.0**:
 # Clone Repository to your catkin workspace
 cd /home/nvidia/catkin-ws/src
 git clone https://github.com/evocortex/evo_rd_platform.git
+
+# Enter repository directory
+cd /home/nvidia/catkin-ws/src/evo_rd_platform
 
 # Checkout required version
 git checkout v1.1.0 # This is only an example and must not work
