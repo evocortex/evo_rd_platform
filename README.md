@@ -22,8 +22,8 @@ There are two ways to install the evo-mbed-tools:
 # Enter evo_rd_platform directory
 cd /home/nvidia/catkin-ws/src/evo_rd_platform
 
-# 1. Method: Installation by hand (see bin/README.md for details)
-sudo dpkg -i bin/evo-mbed-tools-***.deb
+# 1. Method: Installation by hand (see bin/README.md to choose correct package)
+sudo dpkg -i bin/libevo-mbed-tools-***.deb
 
 # 2. Method: Installation via script
 sudo ./update-evo-tools.sh
