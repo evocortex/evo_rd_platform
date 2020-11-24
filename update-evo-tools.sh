@@ -32,7 +32,7 @@ if [ "$LINUX_ARCH_" == "x86_64" ]
 fi
 
 # Generate installation name
-DEB_NAME="bin/evo-mbed-tools-*-${LINUX_DIST}-${LINUX_CODE}-${LINUX_ARCH}.deb"
+DEB_NAME="bin/libevo-mbed-tools*-1~${LINUX_DIST}~${LINUX_CODE}_${LINUX_ARCH}.deb"
 
 # Print welcome message
 echo "*****************************************************"
@@ -54,7 +54,10 @@ echo "-----------------------------------------------------"
 echo ""
 echo "The following commands will be executed with sudo:"
 echo "-----------------------------------------------------"
-echo "- sudo apt remove -y evo_mbed_tools evo-mbed-tools"
+echo "- sudo apt remove -y evo_mbed_tools"
+echo "- sudo apt remove -y evo-mbed-tools"
+echo "- sudo apt remove -y libevo-mbed-tools"
+echo ""
 echo "- sudo dpkg -i ${DEB_NAME}"
 echo "-----------------------------------------------------"
 echo "*****************************************************"
@@ -86,7 +89,9 @@ echo "Removing old library"
 echo "-----------------------------------------------------"
 
 # Remove evo_mbed_tools
-apt-get remove -y evo_mbed_tools evo-mbed-tools
+apt-get remove -y evo_mbed_tools 
+apt-get remove -y evo-mbed-tools
+apt-get remove -y libevo-mbed-tools
 
 echo "-----------------------------------------------------"
 echo ""
