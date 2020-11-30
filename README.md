@@ -22,8 +22,8 @@ There are two ways to install the evo-mbed-tools:
 # Enter evo_rd_platform directory
 cd /home/nvidia/catkin-ws/src/evo_rd_platform
 
-# 1. Method: Installation by hand (see bin/README.md for details)
-sudo dpkg -i bin/evo-mbed-tools-***.deb
+# 1. Method: Installation by hand (see bin/README.md to choose correct package)
+sudo dpkg -i bin/libevo-mbed-tools-***.deb
 
 # 2. Method: Installation via script
 sudo ./update-evo-tools.sh
@@ -57,9 +57,9 @@ git checkout v1.1.0 # This is only an example and must not work
 
 # Update evo-mbed-tools with one of the two methods described below:
 
-# 1. Method: Update by hand (see bin/README.md for details)
-sudo apt remove evo-mbed-tools evo_mbed_tools # Remove old version (if there are erros you can ignore them)
-sudo dpkg -i bin/evo-mbed-tools-***.deb # Install new version
+# 1. Method: Update by hand (see bin/README.md to choose correct package)
+sudo apt remove evo-mbed-tools evo_mbed_tools libevo-mbed-tools # Remove old version (if there are erros you can ignore them)
+sudo dpkg -i bin/libevo-mbed-tools_***.deb # Install new version
 
 # 2. Method: Installation via script
 sudo ./update-evo-tools.sh
@@ -88,8 +88,8 @@ wstool update
 # Update evo-mbed-tools with one of the two methods described below:
 
 # 1. Method: Update by hand (see bin/README.md for details)
-sudo apt remove evo-mbed-tools evo_mbed_tools # Remove old version (if there are erros you can ignore them)
-sudo dpkg -i bin/evo-mbed-tools-***.deb # Install new version
+sudo apt remove evo-mbed-tools evo_mbed_tools libevo-mbed-tools # Remove old version (if there are erros you can ignore them)
+sudo dpkg -i bin/libevo-mbed-tools_***.deb # Install new version
 
 # 2. Method: Installation via script
 sudo ./update-evo-tools.sh
@@ -123,8 +123,8 @@ wstool update
 # Update evo-mbed-tools with one of the two methods described below:
 
 # 1. Method: Update by hand (see bin/README.md for details)
-sudo apt remove evo-mbed-tools evo_mbed_tools # Remove old version (if there are erros you can ignore them)
-sudo dpkg -i bin/evo-mbed-tools-***.deb # Install new version
+sudo apt remove evo-mbed-tools evo_mbed_tools libevo-mbed-tools # Remove old version (if there are erros you can ignore them)
+sudo dpkg -i bin/libevo-mbed-tools_***.deb # Install new version
 
 # 2. Method: Installation via script
 sudo ./update-evo-tools.sh

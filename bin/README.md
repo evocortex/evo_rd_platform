@@ -1,6 +1,18 @@
 # Evocortex Embedded Tools Installation Files
 
-The installation files are provided as Debian-Packages for multiple linux systems and distributions. Please choose the right one:
+The installation files are provided as Debian-Packages for multiple linux systems and distributions. 
+To build the workspace you have to install the library and the development headers. 
+An example for installing the library for Ubuntu Bionic on an amd64 system:
+
+```
+// Install evo-mbed-tools library
+sudo dpkg -i libevo-mbed-tools_1.0.1-1~ubuntu~bionic_amd64.deb
+
+// Install evo-mbed-tools library headers
+sudo dpkg -i libevo-mbed-tools-dev_1.0.1-1~ubuntu~bionic_amd64.deb
+```
+
+A list of supported distributions and architectures is shown below:
 
 | File-Ending | Linux-Distro | Codename | Architecture | System |
 |-------------|--------------|----------|--------------|--------|
