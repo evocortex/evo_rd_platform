@@ -2,8 +2,8 @@
 
 # installation for ubuntu 18
 
-REPO_USER='fh_ws' #fill-with-user
-REPO_PW='AE8nPYH4mx' #fill-with-pw
+REPO_USER='' #fill-with-user
+REPO_PW='' #fill-with-pw
 
 sudo apt install python-wstool
 sudo apt install apt-transport-https
