@@ -6,10 +6,10 @@ An example for installing the library for Ubuntu Bionic on an amd64 system:
 
 ```
 // Install evo-mbed-tools library
-sudo dpkg -i libevo-mbed-tools_1.0.1-1~ubuntu~bionic_amd64.deb
+sudo dpkg -i libevo-mbed-tools_1.0.3-1368~ubuntu~bionic_amd64.deb
 
 // Install evo-mbed-tools library headers
-sudo dpkg -i libevo-mbed-tools-dev_1.0.1-1~ubuntu~bionic_amd64.deb
+sudo dpkg -i libevo-mbed-tools-dev_1.0.3-1368~ubuntu~bionic_amd64.deb
 ```
 
 A list of supported distributions and architectures is shown below:

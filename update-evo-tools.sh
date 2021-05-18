@@ -32,7 +32,7 @@ if [ "$LINUX_ARCH_" == "x86_64" ]
 fi
 
 # Generate installation name
-DEB_NAME="bin/libevo-mbed-tools*-1~${LINUX_DIST}~${LINUX_CODE}_${LINUX_ARCH}.deb"
+DEB_NAME="bin/libevo-mbed-tools*-*~${LINUX_DIST}~${LINUX_CODE}_${LINUX_ARCH}.deb"
 
 # Print welcome message
 echo "*****************************************************"
