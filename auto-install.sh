@@ -8,8 +8,14 @@ REPO_USER=''
 # fill-with-pw
 REPO_PW='' 
 
-# fill with nonfree packages
-# for ELM: "ros-melodic-evo-elm-dcdc ros-melodic-evo-elm-boxed-launch ros-melodic-bluefox2"
+# fill with purchased apt repo modules
+# for ELM: elm-tx2
+# for localizer: localizer mapper
+# for slam: mapper
+NONFREE_MODULES='' 
+
+# fill with purchased apt packages
+# for ELM: "ros-melodic-evo-elm-boxed-launch"
 # for localizer and slam: ros-melodic-evo-tsd-slam ros-melodic-evo-localizer
 NONFREE_PACKAGES='' 
 
@@ -49,11 +55,11 @@ catkin build || source ~/ws/catkin-ws/devel/setup.bash && catkin build
 
 if [ -n "$REPO_PW" ] && [ -n "$REPO_USER" ]
  then
-  wget -O - https://${REPO_USER}:${REPO_PW}@repo.evocortex.org:/apt/ubuntu/conf/evocortex.gpg.key | sudo apt-key add -
-  sudo sh -c 'echo "deb https://repo.evocortex.org:/apt/ubuntu $(lsb_release -sc) main non-free" > /etc/apt/sources.list.d/evocortex.list'
-  sudo sh -c "echo "'machine repo.evocortex.org login '${REPO_USER}' password '${REPO_PW}" > /etc/apt/auth.conf.d/evocortex.conf"
+  wget -O - https://apt.evocortex.org/evocortex.gpg.key | sudo apt-key add -
+  sudo sh -c 'echo "deb https://apt.evocortex.org:/release $(lsb_release -sc) '${NONFREE_MODULES}" > /etc/apt/sources.list.d/evocortex.list'
+  sudo sh -c "echo "'machine apt.evocortex.org login '${REPO_USER}' password '${REPO_PW}" > /etc/apt/auth.conf.d/evocortex.conf"
   sudo apt update
-  sudo apt install -y ros-melodic-evo-tsd-slam ros-melodic-evo-localizer ros-melodic-evo-elm-dcdc ros-melodic-evo-elm-boxed-launch ros-melodic-bluefox2
+  sudo apt install -y $NONFREE_PACKAGES
 fi
 
 # next steps:
